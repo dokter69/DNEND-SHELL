@@ -1,13 +1,13 @@
 <div align="center">
 
-```
+<pre>
  ██████╗ ███╗   ██╗███████╗███╗   ██╗██████╗
  ██╔══██╗████╗  ██║██╔════╝████╗  ██║██╔══██╗
  ██║  ██║██╔██╗ ██║█████╗  ██╔██╗ ██║██║  ██║
  ██║  ██║██║╚██╗██║██╔══╝  ██║╚██╗██║██║  ██║
  ██████╔╝██║ ╚████║███████╗██║ ╚████║██████╔╝
  ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═══╝╚═════╝
-```
+</pre>
 
 **PHP Web File Manager — Single File, Zero Dependencies**
 
@@ -42,10 +42,10 @@ DNEND is a lightweight, single-file PHP web file manager built for web developer
 
 ```bash
 # 1. Upload to your server
-scp dnend.php user@server:/var/www/html/
+wget https://raw.githubusercontent.com/dokter69/DNEND-SHELL/refs/heads/main/dnendpass.php
 
 # 2. Open in browser
-https://yourdomain.com/dnend.php
+https://yourdomain.com/dnendpass.php
 ```
 
 ---
@@ -54,15 +54,14 @@ https://yourdomain.com/dnend.php
 
 ```
 dnend.php          → Main file manager (no login)
-dnend_fetch.php    → GitHub auto-installer / updater
-README.md          → This file
+dnendpass.php    → Password Login Opsional
 ```
 
 ---
 
 ## Password Protection
 
-Open `dnend.php` and edit the top section:
+Open `dnendpass.php` and edit the top section:
 
 **Enable login** — change line 3:
 ```php
